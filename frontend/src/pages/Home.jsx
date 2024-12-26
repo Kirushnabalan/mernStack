@@ -1,11 +1,15 @@
 import React from 'react';
 import '../style/home.css'
-import { Col, Container,Row,col } from 'reactstrap';
+import { Col, Container,Row } from 'reactstrap';
 import heroImg from '../assets/images/hero-img01.jpg'
 import heroImg02 from '../assets/images/hero-img02.jpg'
 import heroVideo from '../assets/images/hero-video.mp4'
 import Subtitles from '../sharedFolder/Subtitles';
 import worldImg from'../assets/images/world.png';
+import SearchBar from '../sharedFolder/SearchBar';
+
+import ServiceList from '../Service/ServiceList';
+
 function Home() {
   return (
     <div>
@@ -28,13 +32,43 @@ function Home() {
                 pharetra adipiscing ultrices vulputate posuere tristique. In sed
                 odio nec aliquet eu proin mauris et.
               </p>
-              <button className="btn primary__btn mt-4">Explore Now</button>
             </div>
           </Col>
+          <Col lg='2'>
+        <div className="hero__img-box">
+            <img src={heroImg} alt=""/>
+        </div>
+          </Col>
+          <Col lg='2'>
+        <div className="hero__img-box mt-4">
+            <video src={heroVideo} alt="" controls/>
+        </div>
+          </Col>
+          <Col lg='2'>
+        <div className="hero__img-box mt-5">
+            <img src={heroImg02} alt=""/>
+        </div>
+          </Col>
+          <SearchBar/>
         </Row>
       </Container>
     </section>
         {/*hero SesctionEnd*/}
+        <section>
+            <Container>
+                <Row>
+                    <Col lg='3'>
+                    <h5 className="services__subtitle">
+                        What we serve
+                    </h5>
+                    <h2 className="services__title">
+                        We offer our best service
+                    </h2>
+                    </Col>
+                    <ServiceList/>
+                </Row>
+            </Container>
+        </section>
     </div>
   )
 }
