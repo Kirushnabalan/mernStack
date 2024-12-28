@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Modak&family=Rubik+Vinyl&display=swap');
 :root {
   --primary-color: #4caf50; /* Refreshing green */
   --secondary-color: #81c784; /* Soft lime green */
@@ -98,7 +98,7 @@ ul {
 /* Section Subtitle */
 .section__subtitle {
   background: var(--secondary-color);
-  font-family: var(--subtitle-font-name);
+  font-family: 'Island Moments', cursive; /* Primary font */
   width: max-content;
   padding: 0.3rem 0.7rem;
   padding-right: 1.5rem;
@@ -115,6 +115,11 @@ ul {
   box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.15);
 }
 
+/* Fallback for better readability if Island Moments is unavailable */
+.section__subtitle {
+  font-family: "Merienda", serif;
+  color: #f5f5f5;
+}
 /* Utility Classes */
 .text-center {
   text-align: center;

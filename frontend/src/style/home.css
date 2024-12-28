@@ -77,3 +77,123 @@
     font-size: 2.3rem;
     font-weight: 500;
   }
+/* Experience Section */
+.counter_box>section {
+  padding: 80px 20px; /* General section padding */
+  background-color: #f0fdf4; /* Soft mint green background */
+}
+
+.experience__content {
+  text-align: left; /* Align text to the left */
+}
+
+.experience__content h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #2a6f4c; /* Deep green for strong headings */
+  margin-bottom: 1.5rem;
+}
+
+.experience__content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #3a5040; /* Muted green-gray for text */
+  margin-bottom: 2rem;
+}
+
+.counter_warpper {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Space between counter boxes */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.counter_box {
+  text-align: center;
+  background: #ffffff; /* Clean white background for contrast */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 15px;
+  min-width: 150px; /* Consistent sizing */
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-top: 5px solid #57c1a1; /* Vibrant green border */
+}
+
+.counter_box:hover {
+  transform: translateY(-7px); /* Slight lift on hover */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 25px; /* More prominent shadow */
+}
+
+.counter_box span {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2a6f4c; /* Deep green for numbers */
+}
+
+.counter_box h6 {
+  font-size: 1rem;
+  color: #555; /* Muted text color for headings */
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Subtle Section Divider */
+.counter_box>section::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #57c1a1, #2a6f4c); /* Gradient divider */
+  margin: 0 auto 20px auto;
+  border-radius: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .counter_warpper {
+    flex-direction: column; /* Stack boxes vertically */
+    gap: 1.5rem; /* Adjust spacing */
+  }
+
+  .experience__content h2 {
+    font-size: 2rem; /* Adjust heading size */
+  }
+}
+.experience_img {
+  text-align: center; /* Center-align the image */
+  margin-top: 20px; /* Add spacing from the top */
+}
+
+.experience_img img {
+  width: 100%; /* Make the image responsive */
+  max-width: 500px; /* Limit the maximum width for large screens */
+  border-radius: 15px; /* Smooth rounded corners */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 20px; /* Subtle shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+  transform: translateY(50%);
+}
+
+.experience_img img:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 25px; /* Enhance shadow on hover */
+}
+
+@media (max-width: 768px) {
+  .experience_img img {
+    max-width: 100%; /* Allow the image to adapt fully to small screens */
+  }
+}
+
+.mansor__image {
+  transition: .3s;
+}
+
+.mansor__image:hover{
+  transform: scale(1.1);
+}
+
+.testimonial__title{
+  font-size: 2.3rem;
+  margin-top: 1rem;
+}
