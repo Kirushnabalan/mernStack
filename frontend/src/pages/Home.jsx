@@ -9,7 +9,7 @@ import worldImg from'../assets/images/world.png';
 import SearchBar from '../sharedFolder/SearchBar';
 
 import ServiceList from '../Service/ServiceList';
-
+import FeaturedTourList from '../components/FeatureTours/FeaturedTourList';
 function Home() {
   return (
     <div>
@@ -69,6 +69,20 @@ function Home() {
                 </Row>
             </Container>
         </section>
+
+        {/* featured tour section start */}
+        <section>
+          <Container>
+            <Row>
+              <Col lg="12" className="mb-5">
+                <Subtitles subtitle={"Explore"}/>
+                <h2 className="featured__tour-title">Our featured tours</h2>
+              </Col>
+              <FeaturedTourList/>
+            </Row>
+          </Container>
+        </section>
+        {/* featured tour section end */}
     </div>
   )
 }
