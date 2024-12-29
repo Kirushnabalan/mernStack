@@ -1,0 +1,130 @@
+:root {
+    --primary-gradient: linear-gradient(135deg, #34d399, #16a34a); /* Vibrant green gradient */
+/* Neutral light background */
+    --footer-padding: 2rem; /* Footer padding */
+  }
+  
+  .footer {
+    background: var(--primary-gradient);
+    color: #ffffff;
+    padding: var(--footer-padding) 0;
+    border-top: 3px solid #16a34a;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer__logo img {
+    max-width: 180px;
+  }
+  
+  .footer__description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer__link-title {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .footer__quick-links .list-group-item {
+    background-color: transparent;
+    border: none;
+    padding: 0.5rem 0;
+  }
+  
+  .footer__quick-links .list-group-item a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s, transform 0.3s ease-in-out;
+  }
+  
+  .footer__quick-links .list-group-item a:hover {
+    color: var(--link-hover-color);
+    transform: translateX(5px);
+  }
+  
+  .social__links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social__links span a {
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: color 0.3s, transform 0.3s ease-in-out;
+  }
+  
+  .social__links span a:hover {
+    color: var(--link-hover-color);
+    transform: scale(1.2);
+  }
+  
+  .footer__contact p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+  
+  .footer__copyright {
+    font-size: 0.85rem;
+    margin-top: 2rem;
+    color: #ffffff;
+    text-align: center;
+    border-top: 1px solid #16a34a;
+    padding-top: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 1.5rem 1rem;
+    }
+  
+    .footer__logo img {
+      max-width: 120px;
+      margin: 0 auto;
+      display: block;
+    }
+  
+    .footer__link-title {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .footer__description {
+      text-align: center;
+    }
+  
+    .footer__quick-links {
+      text-align: center;
+    }
+  
+    .social__links {
+      justify-content: center;
+    }
+  
+    .footer__copyright {
+      font-size: 0.8rem;
+    }
+  }
+/* Footer icon styles */
+.footer__icon {
+  font-size: 1.5rem; /* Slightly larger icons for better visibility */
+  color: #ffffff;
+  margin-right: 0.8rem; /* Increased margin for better spacing between icons */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+  vertical-align: middle;
+}
+
+/* Hover effect for each icon */
+.social__links i {
+  cursor: pointer; /* Change the cursor to a pointer when hovering over icons */
+}
+.social__links i:hover{
+  color: #000000; /* Dark color for hover effect */
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
